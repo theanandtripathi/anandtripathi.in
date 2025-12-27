@@ -3,29 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>AT — Anand Tripathi</title>
-    <meta name="description" content="Anand Tripathi - Full Stack Developer specializing in MERN Stack. Building scalable, user-focused web applications with React, Node.js, MongoDB, and modern technologies." />
+    <meta name="description" content="Anand Tripathi - Full Stack Developer specializing in MERN Stack. Building scalable, user-focused web applications." />
     <meta name="keywords" content="Anand Tripathi, Full Stack Developer, MERN Stack, React Developer, Node.js, MongoDB, Software Engineer, Web Developer" />
     <meta name="author" content="Anand Tripathi" />
 
     <meta property="og:title" content="Anand Tripathi | Full Stack Developer" />
-    <meta property="og:description" content="Full Stack Developer specializing in MERN Stack. Building scalable, user-focused web applications." />
+    <meta property="og:description" content="Full Stack Developer specializing in MERN Stack." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://anandtripathi.in/favicon.svg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@anandtripathi" />
-    <meta name="twitter:image" content="https://anandtripathi.in/favicon.svg" />
 
-    <!-- No image favicon so tab shows title text (AT) instead of a logo -->
-    <link rel="icon" href="data:," />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href="https://anandtripathi.in" />
   </head>
 
   <body>
     <div id="root"></div>
 
-    <!-- Hidden static Netlify form for build-time detection (must match visible form) -->
-    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify style="display:none">
+    <!-- Netlify Form Detection -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact" />
       <input name="name" />
       <input name="email" />
@@ -36,3 +35,4 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
