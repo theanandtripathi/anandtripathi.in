@@ -23,6 +23,16 @@
 
   <body>
     <div id="root"></div>
+
+    <!-- Hidden static Netlify form for build-time detection (must match visible form) -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify style="display:none">
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="name" />
+      <input name="email" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
